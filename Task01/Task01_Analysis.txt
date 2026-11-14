@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class ParkingInput {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter vehicle number: ");
+        String vehicleNo = sc.nextLine();
+
+        System.out.print("Enter vehicle type: ");
+        String vehicleType = sc.nextLine();
+
+        System.out.print("Enter floor number: ");
+        int floor = sc.nextInt();
+
+        System.out.print("Enter slot number: ");
+        int slot = sc.nextInt();
+
+        System.out.println("\n--- Parking Details ---");
+        System.out.println("Vehicle Number: " + vehicleNo);
+        System.out.println("Vehicle Type: " + vehicleType);
+        System.out.println("Floor Number: " + floor);
+        System.out.println("Slot Number: " + slot);
+
+        sc.close();
+    }
+}
